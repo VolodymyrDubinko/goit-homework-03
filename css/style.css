@@ -1,17 +1,68 @@
-.list{
-    list-style-type: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.link{
-    text-decoration: none;
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
+img {
+    display: block;
+}
+
 button{
     cursor: pointer;
+}
+.botton {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.list {
+    list-style-type: none;
+    column-gap: 24px;
+}
+
+.link {
+    text-decoration: none;
 }
 
 body{
 font-family: "Roboto", sans-serif;
 color: #434455;
 background-color: #FFFFFF;
+}
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+.list {
+    display: flex;
 }
 
 .logotype{
@@ -23,6 +74,7 @@ background-color: #FFFFFF;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:#4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-span-header {
@@ -79,6 +131,11 @@ color: #404BBF;
     letter-spacing: 0.02em;
     color:#FFF;
 }
+.business-title {
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .section-hero button{
     background-color:#4D5AE5;
@@ -132,9 +189,12 @@ button:focus {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:#2E2F42;
+    padding-bottom: 72px;
 }
 .list {
     background-color: #FFFFFF;
+    flex-wrap: wrap;
+    column-gap: 24px;
 }
 
 .team-itam {
@@ -170,6 +230,7 @@ button:focus {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    padding-bottom: 72px;
 }
 
 
