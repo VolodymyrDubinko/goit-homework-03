@@ -3,7 +3,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -20,9 +21,30 @@ img {
 button{
     cursor: pointer;
 }
-.botton {
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.button-hero {
     margin-left: auto;
     margin-right: auto;
+    display: block;
+    border-radius: 4px;
+        background-color:#4D5AE5;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            padding: 16px 32px;
+            border: transparent;    
 }
 .container {
     width: 1158px;
@@ -30,7 +52,6 @@ button{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -41,7 +62,6 @@ button{
 
 .list {
     list-style-type: none;
-    column-gap: 24px;
 }
 
 .link {
@@ -53,19 +73,26 @@ font-family: "Roboto", sans-serif;
 color: #434455;
 background-color: #FFFFFF;
 }
-.page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
+
 .page-nav {
     display: flex;
     align-items: center;
 }
-.list {
+.list-benefits {
     display: flex;
+    gap: 24px;
+}
+.list-header {
+    display: flex;
+    gap: 40px;
 }
 
-.logotype{
+.page-header {
+    border-bottom: 1px solid #E7E9FC;
+    background-color:#FFF;
+}
+
+.logotype {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -74,7 +101,12 @@ background-color: #FFFFFF;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:#4d5ae5;
-    margin-right: 76px;
+}
+
+.header-logo {
+margin-right: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo-span-header {
@@ -88,12 +120,17 @@ background-color: #FFFFFF;
     color: #2E2F42;
 }
 
+.header-div {
+    display: flex;
+}
 .header-link {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #2E2F42;
 }
 .header-link:hover,
@@ -107,6 +144,9 @@ background-color: #FFFFFF;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
     color:#434455;
 }
 .address-header:hover,
@@ -135,9 +175,12 @@ color: #404BBF;
     width: 496px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 48px;
+    
+
 }
 
-.section-hero button{
+.section-hero button {
     background-color:#4D5AE5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -153,7 +196,9 @@ button:focus {
     background-color: #404BBF;
 }
 
-
+.ist-benefits {
+    display: flex;
+}
 
 .strategy {
     font-family: Roboto;
@@ -162,6 +207,7 @@ button:focus {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     color:#2E2F42;
 }
 .description {
@@ -173,13 +219,26 @@ button:focus {
     letter-spacing: 0.02em;
     color:#434455;
 }
-
+.description-futures {
+    width: 264px;
+}
 
 
 .section-team{
     background-color: #F4F4FD;
 }
 
+.list-team {
+    display: flex;
+    gap: 24px;
+}
+.div-team {
+    padding: 32px 0;
+    border-radius: 0px 0px 4px 4px;
+        background: #FFF;
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
 .team {
     text-align: center;
     font-family: Roboto;
@@ -190,11 +249,6 @@ button:focus {
     text-transform: capitalize;
     color:#2E2F42;
     padding-bottom: 72px;
-}
-.list {
-    background-color: #FFFFFF;
-    flex-wrap: wrap;
-    column-gap: 24px;
 }
 
 .team-itam {
@@ -209,6 +263,7 @@ button:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .p-section-team {
     text-align: center;
@@ -219,6 +274,9 @@ button:focus {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+
+
 
 
 .portfolio {
@@ -233,9 +291,22 @@ button:focus {
     padding-bottom: 72px;
 }
 
+.list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
 
+.portfolio-div {
+    padding: 32px 16px;
+    border: 1px solid  #E7E9FC;
+    background-color:  #FFF;
+    border-top: 0;
+}
 .footer{
     background-color:#2e2f42;
+    padding: 100px 0;
 }
 .logotype {
     font-family: "Raleway", sans-serif;
@@ -256,6 +327,11 @@ button:focus {
     text-transform: uppercase;
     color: #F4F4FD;
 }
+
+.footer-logo {
+    margin-bottom: 16px;
+    display: block;
+}
 .footer-p {
     font-family: Roboto;
     font-size: 0.8;
@@ -263,4 +339,5 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#F4F4FD;
+    width: 264px;
 }
