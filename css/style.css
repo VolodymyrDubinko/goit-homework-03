@@ -40,11 +40,12 @@ button{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    min-width: 169px;
     border-radius: 4px;
-        background-color:#4D5AE5;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-            padding: 16px 32px;
-            border: transparent;    
+    background-color:#4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    border: transparent;    
 }
 .container {
     width: 1158px;
@@ -160,6 +161,7 @@ color: #404BBF;
 
 .section-hero{
     background-color:#2e2f42;
+    padding: 188px 0;
 }
 
 .hero-title{
@@ -172,12 +174,10 @@ color: #404BBF;
     color:#FFF;
 }
 .business-title {
-    width: 496px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    
-
 }
 
 .section-hero button {
