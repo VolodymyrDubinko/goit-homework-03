@@ -290,6 +290,7 @@ button:focus {
     text-transform: capitalize;
     color: #2E2F42;
     padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .list-portfolio {
